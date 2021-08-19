@@ -10,7 +10,6 @@ ReactDOM.render(
   <React.StrictMode>
     <Global styles={GlobalStyle} />
     <App />
-    <FloatingButton />
   </React.StrictMode>,
   document.getElementById('extension')
 );

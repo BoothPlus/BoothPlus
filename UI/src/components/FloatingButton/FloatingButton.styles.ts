@@ -4,9 +4,9 @@ export const FloatingButton = styled.button`
   width: 4rem;
   height: 4rem;
   background-color: #fc4d50;
-  position: fixed !important;
-  bottom: 2rem;
-  right: 2rem;
+  position: absolute;
+  bottom: 0rem;
+  right: 0rem;
   border: 0;
   border-radius: 30%;
   box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%),
