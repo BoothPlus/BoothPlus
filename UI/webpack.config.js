@@ -1,5 +1,4 @@
 const path = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: process.env.NODE_ENV.trim(),
@@ -30,12 +29,7 @@ module.exports = {
   },
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist'),
-    publicPath: '',
+    path: path.resolve(__dirname, '../ChromeExtension/dist'),
+    publicPath: 'chrome-extension://kliibdckegfemgeimfpabobagohdojag/dist/',
   },
-  plugins: [
-    // new HtmlWebpackPlugin({
-    //   template: path.join(__dirname, 'src/public/index.html'),
-    // }),
-  ],
 };
