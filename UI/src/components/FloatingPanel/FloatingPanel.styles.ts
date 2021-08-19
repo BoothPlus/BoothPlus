@@ -1,4 +1,13 @@
+import { keyframes } from '@emotion/react';
 import styled from '@emotion/styled';
+
+const fadeIn = keyframes`
+  0% {
+    opacity :0;
+  } 100% {
+    opacity: 1;
+  }
+`;
 
 export const FloatingPanel = styled.div`
   position: absolute;
@@ -9,4 +18,5 @@ export const FloatingPanel = styled.div`
   background-color: #f7f9f9;
   border: 1px solid #eeeeee;
   border-radius: 0.5rem;
+  animation: ${fadeIn} 0.2s ease-out;
 `;

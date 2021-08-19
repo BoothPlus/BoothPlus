@@ -30,6 +30,6 @@ export const Plus = styled.img<{ active: boolean }>`
   width: 1rem;
   height: 1rem;
 
-  transform: ${({ active }) => active && 'rotate(45deg)'};
+  transform: ${({ active }) => !active && 'rotate(45deg)'};
   transition: all 0.2s;
 `;
