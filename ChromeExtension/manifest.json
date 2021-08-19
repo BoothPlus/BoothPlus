@@ -27,5 +27,11 @@
         "dist/bundle.js"
       ]
     }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [ "/dist/*" ],
+      "matches": [ "https://booth.pm/*" ]
+    }
   ]
 }
