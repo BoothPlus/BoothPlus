@@ -13,7 +13,15 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ["style-loader", "css-loader"],
+        use: ['style-loader', 'css-loader'],
+      },
+      {
+        test: /\.(png|svg)$/,
+        use: [
+          {
+            loader: 'file-loader',
+          },
+        ],
       },
     ],
   },
@@ -28,5 +36,5 @@ module.exports = {
     // new HtmlWebpackPlugin({
     //   template: path.join(__dirname, 'src/public/index.html'),
     // }),
-  ]
+  ],
 };

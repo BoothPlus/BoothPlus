@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Global } from '@emotion/react';
+
 import App from './App';
-
-import FloatingButton from './Component/FloatingButton';
-
-document.querySelector('meta[property="og:url"]');
-document.querySelector('meta[property="og:image"]');
+import FloatingButton from './components/FloatingButton/FloatingButton';
+import GlobalStyle from './Global.styles';
 
 ReactDOM.render(
   <React.StrictMode>
+    <Global styles={GlobalStyle} />
     <App />
     <FloatingButton />
   </React.StrictMode>,

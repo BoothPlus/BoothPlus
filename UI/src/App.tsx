@@ -1,7 +1,7 @@
-import Panel from './Component/Panel';
+import Panel from './components/Panel';
 
 const App = () => {
   return <Panel />;
 };
 
-export default Panel;
+export default App;
