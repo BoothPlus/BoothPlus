@@ -4,17 +4,26 @@ export const FloatingButton = styled.button`
   width: 4rem;
   height: 4rem;
   background-color: #fc4d50;
-  position: absolute;
+  position: fixed !important;
   bottom: 2rem;
   right: 2rem;
   border: 0;
   border-radius: 30%;
   box-shadow: 0px 3px 5px -1px rgb(0 0 0 / 20%),
     0px 6px 10px 0px rgb(0 0 0 / 14%), 0px 1px 18px 0px rgb(0 0 0 / 12%);
-  min-height: 36px;
+
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,
     border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #ef3e41;
+  }
+
+  &:active {
+    background-color: #e22f32;
+  }
 `;
 
 export const Plus = styled.img<{ active: boolean }>`
