@@ -1,0 +1,31 @@
+{
+  "name": "booth_extension",
+  "description": "booth comment extension",
+  "version": "1.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": [
+    "scripting",
+    "tabs"
+  ],
+  "host_permissions": [
+    "https://booth.pm/*/items/*"
+  ],
+  "action": {
+    "default_icon": {
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://booth.pm/*"
+      ],
+      "js": [
+        "src/main.js",
+        "dist/bundle.js"
+      ]
+    }
+  ]
+}
