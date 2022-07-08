@@ -1,37 +1,22 @@
 {
   "name": "booth_extension",
   "description": "booth comment extension",
-  "version": "1.0",
+  "version": "22.07.05.01",
   "manifest_version": 3,
   "background": {
     "service_worker": "background.js"
   },
   "permissions": [
+    "webRequest",
+    "activeTab",
     "scripting",
     "tabs"
   ],
-  "host_permissions": [
-    "https://booth.pm/*/items/*"
-  ],
-  "action": {
-    "default_icon": {
-    }
-  },
   "content_scripts": [
     {
-      "matches": [
-        "https://booth.pm/*"
-      ],
-      "js": [
-        "src/main.js",
-        "dist/bundle.js"
-      ]
-    }
-  ],
-  "web_accessible_resources": [
-    {
-      "resources": [ "/dist/*" ],
-      "matches": [ "https://booth.pm/*" ]
+      "matches": [ "https://booth.pm/*/items/*" ],
+      "css": [ "src/content.css" ],
+      "js": [ "src/content.js" ]
     }
   ]
 }
