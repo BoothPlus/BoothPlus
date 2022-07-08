@@ -1,0 +1,115 @@
+
+.boothExtension {
+    position: fixed;
+    bottom: 14px;
+    right: 14px;
+    z-index: 10000;
+}
+
+.bpFloatingButton {
+    width: 100px;
+    height: 48px;
+}
+
+.bpBtn:hover {
+    background: #ff7e87;
+    cursor: pointer;
+}
+
+.bpBtn {
+    display: block;
+    border-radius: 5px;
+    background: #ff5c67;
+}
+
+.bpTextCenter {
+    text-align: center;
+    align-items : center;
+    vertical-align: middle;
+    line-height: 48px;
+}
+
+.bpBold {
+    font-weight: bold;
+}
+
+.bpFontWhite {
+    color: white;
+}
+
+.expandComment {
+    animation: forwards;
+    animation-duration: 1s;
+    animation-name: anim-to-box;
+    animation-direction: normal;
+}
+
+.reverseExpandComment {
+    animation: forwards;
+    animation-duration: 1s;
+    animation-name: anim-to-box;
+    animation-direction: reverse;
+}
+
+.bpTitle {
+    background: #fc4d50;
+    height: 48px;
+    position: relative;
+}
+
+.bpClose {
+    position: absolute;
+    top: 0;
+    right: 14px;
+}
+
+.commentList {
+    position: relative;
+    height: 77%;
+    overflow: auto;
+}
+
+.comments {
+    position: relative;
+    height: 15%;
+}
+
+.commentTextArea {
+    padding: 0;
+    height: 100%;
+    width: 80%;
+    margin: 0;
+    display: inline;
+    resize: none;
+}
+
+.commentSendBtn {
+    width: 20%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    float: right;
+    display: inline;
+    background-color: #fc4d50;
+    color: white;
+    line-height: 48px;
+}
+
+@keyframes anim-to-box {
+    from {
+        width: 100px;
+        height: 48px;
+    }
+
+    to {
+        width: 400px;
+        height: 600px;
+        border-radius: 5px;
+        border: 2px solid #fc4d50;
+        background: white;
+    }
+}
+
+@keyframes anim-expand {
+
+}
